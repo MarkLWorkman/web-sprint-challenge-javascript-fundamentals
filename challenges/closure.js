@@ -18,7 +18,14 @@ myFunction();
 
 // Explanation: 
 
+// The nested function can access the internal variable because the internal variable is within the lexical enviroment of nestedFunction. It is able to reach outside of its function to find that variable.
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(number) {
+  if (number == 1) return 1;
+  return number + summation(number -1);
+}
+console.log(summation(4));
