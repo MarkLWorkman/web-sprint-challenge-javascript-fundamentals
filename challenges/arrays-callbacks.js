@@ -39,7 +39,7 @@ const lowCaseAnimalNames = zooAnimals.map(element => element.animal_name.toLower
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-//const lowPopulationAnimals
+const lowPopulationAnimals = zooAnimals.filter(element => element.population < 5);
 //console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
